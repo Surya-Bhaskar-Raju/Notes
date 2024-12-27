@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header Styles */
+.app-header {
+  background-color: #d0732b;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Main Content Styles */
+.app-main {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+/* Editor Styles */
+.editor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note-title {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.note-content {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: none;
+  min-height: 150px;
+}
+
+.save-btn {
+  background-color: #d0732b;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.save-btn:hover {
+  background-color: #d0732b;
+}
+
+/* Notes List Styles */
+.notes-list {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notes-list h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #d0732b;
+}
+
+.note {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.note.pinned {
+  border-left: 4px solid #d0732b;
+}
+
+.note h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.note p {
+  margin: 0.5rem 0 0;
+  color: #666;
+}
+
+.pin-btn, .delete-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #c4ae7b;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.delete-btn {
+  right: 3rem;
+  color: #e53935;
+}
+
+.pin-btn:hover {
+  text-decoration: underline;
+}
+
+.delete-btn:hover {
+  text-decoration: underline;
+}
+
+.edit-btn {
+  position: absolute;
+  top: 1rem;
+  right: 5rem;
+  background: none;
+  border: none;
+  color: #c4ae7b;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-right: 23px;
+}
+
+.edit-btn:hover {
+  text-decoration: underline;
+}
